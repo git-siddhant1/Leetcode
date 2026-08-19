@@ -1,10 +1,10 @@
 class Solution {
 public:
     int searchInsert(vector<int>& nums, int target) {
-        int index=0;
+        int x=0;
         for(int i=0;i<nums.size();i++){
             if(nums[i]==target)return i;
-            if(nums[i]<target) index=i+1;
+            if(nums[i]<target) x=i+1;
         }
- return index;   }
+return x;   }
 };
